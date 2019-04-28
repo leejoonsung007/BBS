@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import logoPic from '../../statics/logo.png';
+import styled from "styled-components";
+import logoPic from "../../statics/logo.png";
 
 export const HeaderWrapper = styled.div`
   position: relative;
@@ -8,9 +8,10 @@ export const HeaderWrapper = styled.div`
 `;
 
 export const Logo = styled.a.attrs({
-  href: '/'
+  href: "/"
 })`
   position: absolute;
+  cursor: pointer;
   top: 0;
   left: 0;
   display: block;
@@ -36,12 +37,12 @@ export const NavItem = styled.div`
   &.left {
     float: left;
   }
-  &.right{
+  &.right {
     float: right;
     color: #969696;
   }
-  &.active{
-    color: #ea6f5a
+  &.active {
+    color: #ea6f5a;
   }
 `;
 
@@ -64,7 +65,7 @@ export const SearchWrapper = styled.div`
 `;
 
 export const NavSearch = styled.input.attrs({
-  placeholder: 'search'
+  placeholder: "搜索"
 })`
   width: 160px;
   height: 38px;
@@ -87,18 +88,18 @@ export const NavSearch = styled.input.attrs({
   }
 
   &.slide-enter {
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
   }
   &.slide-enter-active {
     width: 240px;
   }
-  &.slide-exit{
-    transition: all .2s ease-out;
+  &.slide-exit {
+    transition: all 0.2s ease-out;
   }
   &.slide-exit-active {
     width: 160px;
   }
-`
+`;
 
 export const SearchInfo = styled.div`
   position: absolute;
@@ -106,27 +107,29 @@ export const SearchInfo = styled.div`
   top: 56px;
   width: 240px;
   padding: 0 20px;
-  box-shadow: 0 0 8px rgba(0, 0, 0,.2);
-`
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  background: #fff;
+`;
 export const SearchInfoTitle = styled.div`
   margin-top: 20px;
   margin-bottom: 15px;
   line-height: 20px;
   font-size: 14px;
   color: #969696;
-`
+`;
 export const SearchInfoSwitch = styled.span`
   float: right;
   font-size: 13px;
+  cursor: pointer;
   .spin {
     display: block;
     float: left;
     font-size: 12px;
     margin-right: 5px;
-    transition: all .2s ease-in;
+    transition: all 0.2s ease-in;
     transform-origin: center;
   }
-`
+`;
 
 export const SearchInfoItem = styled.a`
   display: block;
@@ -139,18 +142,18 @@ export const SearchInfoItem = styled.a`
   font-size: 12px;
   color: #787878;
   border-radius: 3px;
-`
+`;
 
 export const SearchInfoList = styled.div`
   overflow: hidden;
-`
+`;
 
 export const Addition = styled.div`
   position: absolute;
   right: 0;
   top: 0;
   height: 56px;
-`
+`;
 
 export const Button = styled.div`
   float: right;
@@ -164,8 +167,8 @@ export const Button = styled.div`
   &.reg {
     color: #ec6149;
   }
-  &.write{
+  &.write {
     color: #fff;
     background: #ec6149;
   }
-`
+`;
