@@ -91,7 +91,6 @@ export const RecommendItem = styled.div`
   border-radius: 4px;
   background: url(${props => props.imgUrl});
   background-size: contain;
-  background: red;
 `;
 
 export const WriterWrapper = styled.div`
